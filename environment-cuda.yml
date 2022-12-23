@@ -11,6 +11,8 @@ dependencies:
   - torchaudio>=0.8
   - cudatoolkit>=10
   - tqdm>=4.36
+  - numpy<1.24  # https://github.com/numba/numba/issues/8615
+  - librosa     # for tools.automix
   - pip
   - pip:
     - diffq>=0.2
